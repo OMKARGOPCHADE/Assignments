@@ -6,7 +6,7 @@ int main()
     scanf("%d",&x);
     printf("befor x is %d",x);
     x=x/10;
-    x=x*10+(x<0?0:0);
-    printf("\nafter x is %d",x);
+
+    printf("\nafter x is %d",x*10);
     return 0;
 }
