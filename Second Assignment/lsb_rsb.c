@@ -1,10 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
+    int a,b=0,c=0;
     printf("Enter a number: ");
     scanf("%d",&a);
-    b=(a&-(a-1));
-    printf("%d",b);
+    while(a!=0){
+        b=a&1;
+        c++;
+        if(b==1)
+            printf("%d",c);
+        a=a>>1;
+    }
+    
     return 0;
 }
